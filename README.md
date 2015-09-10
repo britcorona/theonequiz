@@ -32,14 +32,15 @@ http-server
 
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: Its a function that takes functions arguments and calls them back. Instead of waiting around for a function to finish by returning a value, you can use callbacks to do them asynchronously. Like making an ajax request that could make the browser load slowly.function mySandwich(param1, param2, callback) {
+  **Student answer: Its a function that takes functions arguments and calls them back. Instead of waiting around for a function to finish by returning a value, you can use callbacks to do them asynchronously. Like making an ajax request that could make the browser load slowly.
+  function mySandwich(param1, param2, callback) {
     alert('Started eating my sandwich.\n\nIt has: ' + param1 + ', ' + param2);
     callback();
-}
+  }
 
-mySandwich('ham', 'cheese', function() {
-    alert('Finished eating my sandwich.');
-});**
+  mySandwich('ham', 'cheese', function() {
+      alert('Finished eating my sandwich.');
+  });**
 
 ## Functions and operators
 
