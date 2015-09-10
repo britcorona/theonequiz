@@ -1,0 +1,38 @@
+/*1. Write a selector that selects only the first sibling li elements.*/
+.firstQues :nth-child(1) {
+	color: purple;
+}
+
+/*2. Make all li elements behave as inline elements.*/
+li {
+	display: inline;
+}
+
+/*3.Only the odd section elements should have a border.*/
+section:nth-child(2n+1) {
+	border: 1px solid black;
+}
+
+/*4.Only the even li elements should have a lime background.*/
+section li:nth-child(2n+0) {
+	background-color: lime;
+}
+
+/*5. Only the first aside element in the 2nd section should have blue font color.*/
+aside:nth-child(1) {
+	color: blue;
+}
+
+/*6. There are three div elements with instructions inside them about which side of the screen
+ they should be displayed on. Follow those instructions.*/
+.div1 {
+	float: right;
+}
+
+.div2 {
+	float: left;
+}
+
+.div3 {
+	margin-top: 20px;
+}

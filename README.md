@@ -28,10 +28,18 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  **Student answer: JavaScript's default behavior of moving all declarations to the top of the current scope/function**
+
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  **Student answer: Its a function that takes functions arguments and calls them back. Instead of waiting around for a function to finish by returning a value, you can use callbacks to do them asynchronously. Like making an ajax request that could make the browser load slowly.function mySandwich(param1, param2, callback) {
+    alert('Started eating my sandwich.\n\nIt has: ' + param1 + ', ' + param2);
+    callback();
+}
+
+mySandwich('ham', 'cheese', function() {
+    alert('Finished eating my sandwich.');
+});**
 
 ## Functions and operators
 

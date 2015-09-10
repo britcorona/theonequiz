@@ -10,7 +10,7 @@
 <body>
 
   <article class="main-article">
-    <section>First sibling
+    <section class="firstQues">First sibling
       <ul>
         <li>First sibling -> A</li>
         <li>First sibling -> B</li>
@@ -35,17 +35,21 @@
     <section>Fourth sibling</section>
   </article>
 
-  <div>
+  <div class="div1">
     I should be on the right side of the screen
   </div>
-  <div>
+  <div class="div2">
     I should be on the left side of the screen
   </div>
-  <div>
+  <div class="div3">
     I should render below my two siblings
   </div>
 
-  <div id="vanilla_output"></div>
+  <div id="vanilla_output">
+    <script>
+    document.write("This content generated with vanilla JavaScript");
+    </script>
+  </div>
   <div id="jquery_output"></div>
   
 
